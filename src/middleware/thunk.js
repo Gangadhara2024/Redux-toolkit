@@ -9,6 +9,7 @@ export const asyncIncCount = async (dispatch, getState) => {
   console.log(getState());
   dispatch({ type: "inc", payload: 5 });
 };
+
 export const fetchpostOffice = async (dispatch, getState) => {
   try {
     const response = await fetch("https://api.postalpincode.in/pincode/531055");
